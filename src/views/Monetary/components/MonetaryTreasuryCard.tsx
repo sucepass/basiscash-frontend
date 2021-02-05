@@ -102,22 +102,7 @@ const MonetaryTreasuryCard: React.FC = () => {
         <MonetaryCardFootCell
           title='Current Bond Price'
           value={bondStat ? `$${bondStat.priceInUSDT}` : '-'}
-          button={approveStatus != ApprovalState.APPROVED ? (
-            <MonetaryCardButton
-              text='Approve MIC'
-              disabled={
-                approveStatus === ApprovalState.PENDING ||
-                approveStatus === ApprovalState.UNKNOWN
-              }
-              onClick={() => catchError(approve(), `Unable to approve MIC`)}
-            />
-          ) : (
-            <MonetaryCardButton
-              text='Buy MIB with MIC'
-              disabled={!bondStat || isBondRedeemable}
-              onClick={onPresentBuyBond}
-            />
-          )}
+          button={<></>}
         />
         <MonetaryCardFootCell
           title='Your Balance'
