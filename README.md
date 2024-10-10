@@ -19,7 +19,7 @@ On `src/config.ts`, please replace it:
 - defaultProvider: 'https://mainnet.infura.io/v3/OLD_PROVIDER_URL',
 + defaultProvider: 'https://mainnet.infura.io/v3/YOUR_PROVIDER_URL',
 ```
-
+adf
 After it, you can launch the development server with following command.
 
 ```
